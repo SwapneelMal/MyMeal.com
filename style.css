@@ -1,0 +1,283 @@
+/* Font-Families are:
+font-family: 'Baloo 2', cursive;
+font-family: 'Bree Serif', serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-hight: 59px:
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin: 3px 42px;
+}
+
+.logo img {
+    margin: 3px 6px;
+    transition: all 1.2s ease;
+}
+
+.logo img:active {
+    transform: rotate(360deg);
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar {
+    position: absolute;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    height: 615px;
+}
+
+#home::before {
+    content: "";
+    background: url('Source/bg1.jpg') no-repeat center/cover;
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: wheat;
+    border: 2px solid brown;
+}
+
+.center {
+    text-align: center;
+}
+
+.secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#services h1 {
+    font-family: 'Baloo 2', cursive;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 22px;
+    background-color: wheat;
+    transition: all 0.5s ease;
+}
+
+#services .box:hover {
+    cursor: pointer;
+    transform: scale(1.077);
+    border: 3px solid blue;
+}
+
+#services .box p:hover {
+    cursor: pointer;
+}
+
+#services .box img {
+    height: 160px;
+    display: flex;
+    display: block;
+    margin: auto;
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+}
+
+.about {
+    margin: 40px 40px 130px 20px;
+    font-size: 25px;
+    border: 2px solid brown;
+    background-color: rgb(255, 229, 195);
+    border-radius: 18px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: hello;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: infinite;
+}
+
+@keyframes hello {
+    0% {
+        background-color: aliceblue;
+        color: yellow;
+    }
+    10% {
+        background-color: yellow;
+        color: yellowgreen;
+    }
+    20% {
+        background-color: yellowgreen;
+        color: cyan;
+    }
+    30% {
+        background-color: cyan;
+        color: blue;
+    }
+    40% {
+        background-color: greenyellow;
+        color: blue;
+    }
+    50% {
+        background-color: blue;
+        color: purple;
+    }
+    60% {
+        background-color: purple;
+        color: orange;
+    }
+    70% {
+        background-color: orange;
+        color: red;
+    }
+    80% {
+        background-color: red;
+        color: gold;
+    }
+    90% {
+        background-color: gold;
+        color: greenyellow;
+    }
+    100% {
+        background-color: black;
+        color: white;
+    }
+}
+
+.who {
+    font-size: 14px;
+}
+
+.about::before {
+    content: "";
+    background: url('Source/bg.jpg') no-repeat center/cover;
+    position: absolute;
+    height: 64%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    right: 0px;
+    left: 0px;
+    bottom: -151.9%;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('Source/contact.jpg') no-repeat center/cover;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 6px;
+}
+
+.contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    font-size: 1.3rem;
+}
+
+.contactbox input,
+.contactbox textarea {
+    width: 110%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 9px;
+}
