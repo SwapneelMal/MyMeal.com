@@ -281,3 +281,7 @@ footer {
     font-size: 1.3rem;
     border-radius: 9px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
